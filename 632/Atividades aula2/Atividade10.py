@@ -1,6 +1,6 @@
-candidatos = {"Ana": 0, "Carlos": 0, "Maria": 0}
+candidatos = {"Ana": 0, "Carlos": 0, "Maria": 0, "Kaio": 0, "Nikole": 0, "Murilo": 0, "William": 999}
 
-print("Candidatos: Ana, Carlos e Maria")
+print("Candidatos a presidente: Ana, Carlos, Maria, Kaio, Nikole, Murilo e William")
 while True:
     voto = input("Digite o candidato ou 'fim': ")
     if voto.lower() == "fim":
