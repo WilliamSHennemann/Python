@@ -1,12 +1,10 @@
-numeros = [12, 7, 25, 8, 14, 33, 10, 5, 18, 21]
-maior = numeros[0]
-menor = numeros[0]
+import random
 
-for numero in numeros[1:]:
-    if numero > maior:
-        maior = numero
-    if numero < menor:
-        menor = numero
+numeros = [random.randint(1, 100) for i in range(10)]
+
+numeros.sort()
+maior = numeros[-1]
+menor = numeros[0]
 
 media = sum(numeros) / len(numeros)
 
