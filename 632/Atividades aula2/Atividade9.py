@@ -10,8 +10,12 @@ alunos = {
 
 for nome, notas in alunos.items():
     media = sum(notas) / len(notas)
-    if nome == "Carlos":
-        situacao = "Aprovado" if media >= 6 else "Reprovado"
+    if media >= 6:
+        situacao = "Aprovado"
     else:
-        situacao = "Aprovada" if media >= 6 else "Reprovada"
+        situacao = "Reprovada"
     print(f"{nome} -> {media:.2f} -> {situacao}")
+
+print(f'\n {alunos.items()}')
+print(f'\n {alunos.keys()}')
+print(f'\n {alunos.values()}')
